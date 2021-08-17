@@ -24,7 +24,7 @@ export const REPOS_QUERY = gql`
 export const CLIENT = new ApolloClient({
   uri: "https://api.github.com/graphql",
   headers: {
-    Authorization: "bearer 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"
+    Authorization: "bearer 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"
   },
   cache: new InMemoryCache()
 });
