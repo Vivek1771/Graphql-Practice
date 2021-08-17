@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import ExchangeRates from './components/ExchangeRate';
+import Form from './components/Form';
+import Login from './components/Login'
+import Profile from './components/Profile';
+import Weather from './components/Weather';
+import GetRepo from './components/GetRepo';
+import Sub from './components/Subscription';
+import Dark from './components/Darkmode';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>GraphQl</h1>
+      <hr width="450px" />
+      {/* <ExchangeRates /> */}
+      <h2>Register</h2>
+      <Form />
+      <hr width="450px" />
+      <h2>Login</h2>
+      <Login />
+      <hr width="450px" />
+      <h2>Dashboard</h2>
+      <Profile />
+      <Weather />
+      <div style={{ "paddingBottom": "50px" }} ></div>
+      <h1>Pagination</h1>
+      <GetRepo />
+      {/* <Sub /> */}
+      <Dark />
     </div>
   );
 }
